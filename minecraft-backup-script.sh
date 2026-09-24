@@ -23,7 +23,7 @@ if ! tmux has-session -t minecraft 2>/dev/null; then
 fi
 
 log "Notifying players..."
-tmux send-keys -t minecraft "say Server backup starting in 10 seconds..." Enter
+tmux send-keys -t minecraft "say Backup serwera za 10s, wypierdalac..." Enter
 
 sleep 10
 
@@ -68,7 +68,7 @@ fi
 log "Starting Minecraft..."
 
 tmux send-keys -t minecraft \
-    "cd $SERVER_DIR && LD_LIBRARY_PATH=. ./bedrock_server" Enter
+    "cd $SERVER_DIR && LD_LIBRARY_PATH=. ./start-server.sh" Enter
 
 sleep 10
 

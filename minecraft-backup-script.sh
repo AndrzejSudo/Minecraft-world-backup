@@ -72,7 +72,7 @@ tmux send-keys -t minecraft \
 
 sleep 10
 
-if pgrep -f "$SERVER_DIR/bedrock_server" >/dev/null; then
+if pgrep -f "bedrock_server" >/dev/null; then
     log "Minecraft started successfully."
 else
     log "ERROR: Minecraft failed to start."

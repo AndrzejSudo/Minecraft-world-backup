@@ -55,13 +55,13 @@ log "Worlds copied."
 
 cd "$BACKUP_DIR"
 
-git add worlds
+git add .
 
 if git diff --cached --quiet; then
     log "No changes detected."
 else
     git commit -m "Minecraft world backup $(date '+%Y-%m-%d %H:%M:%S')"
-    git push origin main
+    git push origin master
     log "Backup pushed to GitHub."
 fi
 

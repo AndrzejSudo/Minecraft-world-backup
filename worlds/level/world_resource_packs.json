@@ -1,0 +1,9 @@
+{
+  "resource_packs": [
+    {
+      "pack_id": "9d2f7e4c-5b8a-4c3e-9b1d-6f7a8c2d1e0f",
+      "version": [1, 0, 0],
+      "required": true
+    }
+  ]
+}

@@ -1,5 +1,4 @@
-# Configuration for auto backups to github of minecraft bedrock world files
-## Requires initial bedrock server configuration running in tmux
+# Configuration for auto backups to github of minecraft bedrock world files (Requires initial bedrock server configuration running in tmux)
 
 ### Create ssh keys for backup job (use it only for connecting to github repo)
 > ssh-keygen -t ed25519 -C "minecraft-backup" -f ~/.ssh/minecraft_backup

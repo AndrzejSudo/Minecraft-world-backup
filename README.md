@@ -11,12 +11,12 @@
 ### Create ssh config
 > nano ~/.ssh/config
 
-### Put it there
+### Put this there
 > Host github-minecraft
->    HostName github.com
->    User git
->    IdentityFile ~/.ssh/minecraft_backup
->    IdentitiesOnly yes
+> HostName github.com
+> User git
+> IdentityFile ~/.ssh/minecraft_backup
+> IdentitiesOnly yes
 
 ### Test it
 > chmod 600 ~/.ssh/config

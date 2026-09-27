@@ -2,7 +2,9 @@
 
 ### Create ssh keys for backup job (use it only for connecting to github repo)
 > ssh-keygen -t ed25519 -C "minecraft-backup" -f ~/.ssh/minecraft_backup
+> 
 > chmod 600 ~/.ssh/minecraft_backup
+> 
 > chmod 644 ~/.ssh/minecraft_backup.pub
 
 ### Add key to gihub repository with write access (deploy keys)

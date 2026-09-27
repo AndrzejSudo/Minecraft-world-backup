@@ -27,6 +27,7 @@ IdentitiesOnly yes
 
 ### Test connectivity
 > chmod 600 ~/.ssh/config
+> 
 > ssh -T github-minecraft
 
 ### Create gitignore
@@ -40,8 +41,11 @@ IdentitiesOnly yes
 
 ### Test manual backup first
 > git add worlds .gitignore
+> 
 > git status
+> 
 > git commit -m "Initial Minecraft world backup"
+> 
 > git push origin master
 
 ### Download backup script and makeit executable
@@ -60,6 +64,7 @@ Type=oneshot
 User=guru
 ExecStart=/home/guru/minecraft-backup.sh
 ```
+
 > sudo nano /etc/systemd/system/minecraft-backup.timer
 ```
 [Unit]
@@ -76,10 +81,12 @@ WantedBy=timers.target
 
 ### Enable everything
 > sudo systemctl daemon-reload
+> 
 > sudo systemctl enable --now minecraft-backup.timer
 
 ### Backup should work now, but you can check it
 > sudo systemctl start minecraft-backup.service
+> 
 > journalctl -xeu minecraft-backup.service
 
 

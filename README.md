@@ -11,7 +11,7 @@
 ### Create ssh config
 > nano ~/.ssh/config
 
-### Put this there
+### Put it there
 > Host github-minecraft
 >    HostName github.com
 >    User git

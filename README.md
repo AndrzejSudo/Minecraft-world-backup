@@ -89,4 +89,9 @@ WantedBy=timers.target
 > 
 > journalctl -xeu minecraft-backup.service
 
-
+### Create new session in tmux
+> tmux new -t minecraft
+>
+> exit
+>
+> tmux attach -t minecraft

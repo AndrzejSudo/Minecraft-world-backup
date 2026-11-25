@@ -19,12 +19,14 @@ log "Minecraft backup started"
 
 if ! tmux has-session -t minecraft 2>/dev/null; then
     log "ERROR: tmux session 'minecraft' does not exist."
+    tmux new -s minecraft
     exit 1
 fi
 
 log "Notifying players..."
-tmux send-keys -t minecraft "say Backup serwera za 10s, wypierdalac..." Enter
-
+tmux send-keys -t minecraft "say Backup serwera za 30s" Enter
+sleep 20
+tmux send-keys -t minecraft "say Backup serwera za 10s" Enter
 sleep 10
 
 log "Stopping Minecraft..."
